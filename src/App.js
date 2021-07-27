@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
 import "./App.scss";
 import Header from "./components/Header/Header";
 import Card from "./components/Card/Card";
@@ -39,6 +40,9 @@ const Main = () => {
 const App = () => {
   return (
     <div className="App">
+      <Helmet>
+        <title>Random hexadecimal</title>
+      </Helmet>
       <Header />
       <Main />
     </div>
